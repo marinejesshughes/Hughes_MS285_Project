@@ -5,7 +5,7 @@
 
 **Motivation**
 
-Scientific Research Question: Do the diet proportions of harbor seals differ between seasons (spring, summer, fall, winter)? 
+Scientific Research Question: Do the diet proportions of harbor seals differ between seasons (spring; fall)? 
 
 It is important to understand the seasonal variability in harbor seal diets to reveal more about their foraging plasticity and adaptability. Central place foraging theory suggests that harbor seals prefer to forage near their haul-outs due to their moderate to high site fidelity, which in turn encourages a generalist diet (i.e., a more flexible diet), since there is less opportunity to be highly selective when hunting for prey. As prey abundance and composition change from one season to the next, harbor seal diets will change accordingly. Therefore, understanding the seasonal changes in diet composition will allude to the changes in the habitats that make up harbor seals’ local foraging ranges. 
 
@@ -22,7 +22,7 @@ The original dataset is a .csv file that is posted on Dryad is 160.10 KB. Howeve
 
 **Model** 
 
-I want to use the diet proportions to determine what season that sample was collected in (spring, summer, winter, or fall) and so, my prediction, or output of the model, will be a season. Because there are four seasons/classifiers, KNN is useful because it separates data into multiple classes and can therefore predict all four classes with just one model, without using a ‘one versus all’ binary classifier. In addition, most problems are non-linear, so it is safer to make the assumption that my data are non-linear and start by using a KNN classifier. I will normalize the input features so that one parameter does not bias the results. I will include the following features which have been shown to account for variance in the literature: diet composition, with each of the observed prey species in the diet study considered to be one feature; site (with values of Comox and Conwichan Bay); and sex (with values of Female and Male). Finally, I will use the Mean Square Error (MSE) loss function which is a way of measuring the number of observations the model misclassified.
+I want to use the diet proportions to determine what season that sample was collected in (spring, summer, winter, or fall) and so, my prediction, or output of the model, will be a season. Most problems are non-linear, so it is safer to make the assumption that my data are non-linear and start by using a KNN classifier. I will normalize the input features so that one parameter does not bias the results. I will include the following features which have been shown to account for variance in the literature: diet composition, with each of the observed prey species in the diet study considered to be one feature; site (with values of Comox and Conwichan Bay); and sex (with values of Female and Male). Finally, I will use the Mean Square Error (MSE) loss function which is a way of measuring the number of observations the model misclassified.
 
 
 **Analysis** 
