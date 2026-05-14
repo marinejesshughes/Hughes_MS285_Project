@@ -29,3 +29,7 @@ I want to use the diet proportions to determine what season a sample was collect
 
 I will evaluate my model results by creating a ‘confusion matrix’ that will provide a visualization of the true positives, true negatives, false positives, and false negatives. The confusion matrix will tell me which classes the model confuses the most. An accurate model demonstrates the ability to predict seasonal changes in the diet of harbor seals which will provide insight into how their habitats and prey availability are changing between seasons.
 
+
+**Instructions**
+
+To run this Jupyter Notebook, change the file path or directory names to work with where the dataset is stored for you. Make sure you install all packages that are required for this script. 
